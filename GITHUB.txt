@@ -1,0 +1,70 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    double m_orange, total;
+    m_orange = Convert.ToDouble(Console.ReadLine()); // kg
+    
+    for (int i = 1; i < 30; i++) {
+        m_orange = m_orange - (m_orange / 100) * 1;
+    }
+      Console.WriteLine("{0} осталось", m_orange);
+  }
+}
+
+using System;
+class HelloWorld {
+  static void Main() {
+    int a, b, c, sum, mult, sr;
+    a = Convert.ToInt16(Console.ReadLine());
+    b = Convert.ToInt16(Console.ReadLine());
+    c = Convert.ToInt16(Console.ReadLine());
+   
+    sum = a + b + c;
+    mult = a * b * c;
+    sr = (a + b + c)/3;
+    Console.WriteLine("Сумма, произведение, ср. арифметическое {0}, {1}, {2}", sum, mult, sr);
+  }
+}
+
+using System; //4 и 5 задание вместе
+class HelloWorld {
+  static void Main() {
+    int da, net;
+    da = 2;
+    net = 4;
+   
+    (da, net) = (net, da);
+   
+    Console.WriteLine($"{da}-{net}");
+  }
+}
+
+
+using System;
+class HelloWorld {
+  static void Main() {
+    int x, y;
+   
+    x = Convert.ToInt16(Console.ReadLine());
+    y = Convert.ToInt16(Console.ReadLine());
+
+    for (int i = 1; i < y; i++) {
+        x *= x;
+    }
+   
+    Console.WriteLine("{0}, {1}", x, y);
+  }
+}
+
+using System;
+class HelloWorld {
+  static void Main() {
+    double m_orange, total;
+    m_orange = Convert.ToDouble(Console.ReadLine()); // kg
+   
+    for (int i = 1; i < 30; i++) {
+        m_orange = m_orange - (m_orange / 100) * 1;
+    }
+      Console.WriteLine("{0} осталось", m_orange);
+  }
+}
