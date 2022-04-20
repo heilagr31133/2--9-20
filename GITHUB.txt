@@ -8,12 +8,8 @@ class HelloWorld {
         m_orange = m_orange - (m_orange / 100) * 1;
     }
       Console.WriteLine("{0} осталось", m_orange);
-  }
-}
+      
 
-using System;
-class HelloWorld {
-  static void Main() {
     int a, b, c, sum, mult, sr;
     a = Convert.ToInt16(Console.ReadLine());
     b = Convert.ToInt16(Console.ReadLine());
@@ -23,12 +19,9 @@ class HelloWorld {
     mult = a * b * c;
     sr = (a + b + c)/3;
     Console.WriteLine("Сумма, произведение, ср. арифметическое {0}, {1}, {2}", sum, mult, sr);
-  }
-}
 
-using System; //4 и 5 задание вместе
-class HelloWorld {
-  static void Main() {
+ //4 и 5 задание вместе
+
     int da, net;
     da = 2;
     net = 4;
@@ -36,13 +29,7 @@ class HelloWorld {
     (da, net) = (net, da);
    
     Console.WriteLine($"{da}-{net}");
-  }
-}
 
-
-using System;
-class HelloWorld {
-  static void Main() {
     int x, y;
    
     x = Convert.ToInt16(Console.ReadLine());
@@ -53,12 +40,7 @@ class HelloWorld {
     }
    
     Console.WriteLine("{0}, {1}", x, y);
-  }
-}
-
-using System;
-class HelloWorld {
-  static void Main() {
+    //
     double m_orange, total;
     m_orange = Convert.ToDouble(Console.ReadLine()); // kg
    
@@ -66,5 +48,25 @@ class HelloWorld {
         m_orange = m_orange - (m_orange / 100) * 1;
     }
       Console.WriteLine("{0} осталось", m_orange);
+
+    double r;
+    const double pi = 3.14;
+    r = Convert.ToDouble(Console.ReadLine());
+    double s = pi * Math.Pow(r, 2);
+    double len = 2 * pi * r;
+    
+    Console.WriteLine("Площадь окружности : {0}, длина окружности: {1}", s, len);
+ 
+    int a, b, c, d;
+    
+    a = Convert.ToInt16(Console.ReadLine());
+    
+    b = a * a;
+    c = b * b;
+    d = c * c;
+    a = d * b;
+    
+    
+    Console.WriteLine("{0}", a);
   }
 }
